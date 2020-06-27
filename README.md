@@ -15,8 +15,8 @@ In this manuscript, we apply a Symbiodiniaceae-specific Hidden Markov Model of t
 
 **data/:** Contains input and output data used in this study.
 
-**files/:** Contains two zip files included in the manuscript.
+**figures/:** Contains pdf files for each figure included in the manuscript.
 
-**figures/:** Contains pdf files for each figure included in the manuscript..
+**files/:** Contains two zip files included in the manuscript.
 
 **tables/:** Contains excel files for each table included in the manuscript.
