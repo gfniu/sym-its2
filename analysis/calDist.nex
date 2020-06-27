@@ -1,0 +1,9 @@
+begin paup;
+  execute Sym_ITS2_core_583_aln.nex;
+  set criterion = distance;
+  dset Distance=gtr Rates=gamma Shape=3.8721 Pinvar=0.0108; 
+  showdist;
+  SaveDist format=oneColumn file=dist2.txt;
+  SaveDist format=tabText file=dist.txt;
+
+end;
