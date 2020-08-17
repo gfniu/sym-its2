@@ -120,7 +120,7 @@ def main():
 
         parsingCm.structure = buildDotStr(
             parsingCm.part_start-1)+parsingCm.part_struct+buildDotStr(len(sequence)-parsingCm.part_end)
-        parsingCm.structure = re.sub('[^<>]', '.', parsingCm.structure)
+        parsingCm.structure = re.sub('[^()<>]', '.', parsingCm.structure)
         parsingCm.structure = parsingCm.structure.replace(
             '<', '(').replace('>', ')')
         # omitting_seqs = re.findall("(?<=\*\[).*?(?=\]\*)", parsingCm.sequence)
