@@ -7,8 +7,7 @@
         MAFFT v7.427
         MrBayes v3.0b4
         MrModeltest v2.4
-        PAUP* v4.0a165
-        PseudoViewer3
+        PAUP* v4.0a165        
         RAxML v8.2.10
         R2R v1.0.5
         ViennaRNA v2.4.11
@@ -58,11 +57,11 @@ The script **cm2xfasta.py** converts the Infernal output ("\~/data/7_Secondary_s
 3. *Calculate free energy*  
 The script **calEnergy.py** calculates free energy for each secondary structure using ViennaRNA-2.4.9.
 4. *View the structures*  
-The structures are plotted and visualized in PseudoViewer3. The predicted secondary structures of 619 core ITS2 sequences, in XFASTA format as well as individual images, can be found in the compressed file "\~/files/File S1.zip" accompanying the manuscript.
+The structures are plotted and visualized in R2R-1.0.5. The predicted secondary structures of 619 core ITS2 sequences, in XFASTA format as well as individual images, can be found in the compressed file "\~/files/File S1.zip" accompanying the manuscript.
 * ### Consensus structure
 1. *Cluster secondary structures*    
 For each clade of Symbiodiniaceae ITS2 sequences in the core dataset ("\~/data/3_Core_references /Sym_ITS2_core.fasta"), clustering of their secondary structures is performed with graphclust-0.7.6, generating a consensus sequence per each clade ("\~/data/8_Consensus_structure/con_struct_seqs.fasta")
 2. *Predict clade-specific secondary structures*  
 The consensus sequences from step 1 is used as input for Infernal-1.1.2 to search against the template database ("\~/data/7_Secondary_structure/database/Template42.cm.*") for similar secondary structures, which are then used as templates to generate structural alignments for the sequences clustered into each clade.
 3. *Depict consensus secondary structures*  
-The script **drawConStruct.sh** takes structural alignments generated in step 2 as input to draw consensus secondary structures using R2R-1.0.5. The clade-specific multi-sequence structural alignments in STOCKHOLM format and the corresponding consensus secondary structures deduced from 567 core sequences, as shown in Fig. 5 of the manuscript, are saved in the compressed file "\~/files/File S2.zip" accompanying the manuscript.
+The script **drawConStruct.sh** takes structural alignments generated in step 2 as input to draw consensus secondary structures using R2R-1.0.5. The clade-specific multi-sequence structural alignments in STOCKHOLM format and the corresponding consensus secondary structures deduced from 565 core sequences, as shown in Fig. 5 of the manuscript, are saved in the compressed file "\~/files/File S2.zip" accompanying the manuscript.
