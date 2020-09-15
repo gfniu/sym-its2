@@ -51,8 +51,6 @@ def main():
         end_its2 = 0
         end_28s = 0
         for f in record.features:
-            if record.id == 'AJ291512.1':
-                sdf = 0
             if f.type != 'source':
                 liststr = list(f.qualifiers.values())[0][0]
                 if liststr.find('contains') > -1:

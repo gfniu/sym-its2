@@ -18,9 +18,9 @@
 1. *Download sequences*  
 The script **searchGB.py** downloads Symbiodiniaceae rDNA sequence containing ITS2 from GenBank using keyword search command. The downloaded sequences are written to "~/data/1_GenBank/gb_its2.fasta".
 2. *Multiple sequence alignment*  
-The gb_its2 sequences having 5.8S or 28S annotations are aligned and written to "\~/data/1_GenBank/gb_its2_anno_aln.fasta".
+The gb_its2 sequences having 5.8S or 28S annotations are aligned and written to "~/data/1_GenBank/gb_its2_anno_aln.fasta".
 3. *Extract boundary information*  
-The script **extractBounds.py** extracts boundary information based on GenBank annotation, which is used to map the rDNA operon elements onto the gb_its2 alignment. This step generates the stacked bar chart ("\~/data/1_GenBank/gb_its2_anno_stack.xlsx") as shown in Fig. 1 of the manuscript.
+The script **extractBounds.py** extracts boundary information based on GenBank annotation, which is used to map the rDNA operon elements onto the gb_its2 alignment. This step generates the stacked bar chart as shown in Fig. 1 of the manuscript.
 * ### HMM
 1. The gb_its2 sequences with both 5.8S and 28S annotations ("\~/data/2_HMM/gb_its2_5.8S_28S_anno.gb") are scanned for the ITS2-proximal stem using the ITS2 database web tool (http://its2.bioapps.biozentrum.uni-wuerzburg.de).  
 2. The file "\~/tables/Table S1.htm" lists ITS2-proximal stems identified from 1,328 gb_its2 sequences that are used to create the logo in Fig. 2 of the manuscript.  
